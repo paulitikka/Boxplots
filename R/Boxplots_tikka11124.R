@@ -9,12 +9,15 @@
 #'
 #' Converts data to boxplots.
 #' Written by Pauli Tikka. University of Turku. Updated 1.11.24.
-#' @param tvt The dataset
+#' @param tvt The dataset with steroids and cases
+#' @param Group All, Female, Male (typically a gender column)
+#' @param Outcome The case (e.g. steatosis). Typically a column name in the dataset
+#' @param Out An header add (of the case) for the boxplot's header
+#' @param oute The label title. Here, almost the same as case.
 #' @return The plot
 #' @examples
-#' temp1 <- boxplots;
 #' @export
-boxplots=function(tvt,Group,Outcome,Out,oute,other) {
+boxplots=function(tvt,Group,Outcome,Out,oute) {
 
   if (Group=='Male') {tvt=tvt[tvt[,'Gender']==1,]} else if (Group=='Female')
   {tvt=tvt[tvt[,'Gender']==0,]} else if (Group=='All') {tvt=tvt}
@@ -36,7 +39,8 @@ boxplots=function(tvt,Group,Outcome,Out,oute,other) {
   {lep=theme(legend.position = "none")} else if (Group=='All') {lep=theme_classic2()+theme(axis.text.x=element_text(angle=90,hjust=0.95,vjust=0.2,size = 14))}
   # lep=theme(legend.position = "none")
   if (num==1.5) {e1=paste('Case (>=',num,')',sep="");e2=paste('Control (<',num,')',sep="");
-  e3=paste('****<0.001', '***<0.01', '**<0.05', '*<0.1')} else {e1=paste('Case (>',0,')',sep="");e2=paste('Control (=',0,')',sep="");e3=paste('****<0.001', '***<0.01', '**<0.05', '*<0.1')}
+  e3=paste('****<0.001', '***<0.01', '**<0.05', '*<0.1')} else {e1=paste('Case (>',0,')',sep="");e2=paste('Control (=',0,')',sep="");
+  e3=paste('****<0.001', '***<0.01', '**<0.05', '*<0.1')}
 
   e3=paste('****<0.001', '***<0.01', '**<0.05', '*<0.1')
 
