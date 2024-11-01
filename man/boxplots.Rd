@@ -7,15 +7,24 @@
 boxplots(tvt, Group, Outcome, Out, oute, other)
 }
 \arguments{
-\item{tvt}{The dataset}
+\item{tvt}{The dataset with steroids and cases}
+
+\item{Group}{All, Female, Male (typically a gender column)}
+
+\item{Outcome}{The case (e.g. steatosis). Typically a column name in the dataset}
+
+\item{Out}{An header add (of the case) for the boxplot's header}
+
+\item{oute}{The label title. Here, almost the same as case.}
 }
 \value{
-the plot
+The plot
 }
 \description{
 Converts data to boxplots.
 Written by Pauli Tikka. University of Turku. Updated 1.11.24.
 }
 \examples{
-temp1 <- boxplots;
+ie=tv_half_log22;Outcome='Steatosis Grade';Out='Steatosis'; oute='Steatosis Grade';Group='All';
+boxplots(ie,Group,Outcome,Out,oute)
 }
