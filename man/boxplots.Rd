@@ -18,7 +18,7 @@ boxplots(tvt, Group, Outcome, Out, oute, other)
 \item{oute}{The label title. Here, almost the same as case.}
 }
 \value{
-The plot
+The boxplot
 }
 \description{
 Converts data to boxplots.
