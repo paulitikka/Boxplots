@@ -16,6 +16,8 @@
 #' @param oute The label title. Here, almost the same as case.
 #' @return The plot
 #' @examples
+#' ie=tv_half_log22;Outcome='Steatosis Grade';Out='Steatosis'; oute='Steatosis Grade';Group='All';
+#' boxplots(ie,Group,Outcome,Out,oute)
 #' @export
 boxplots=function(tvt,Group,Outcome,Out,oute) {
 
