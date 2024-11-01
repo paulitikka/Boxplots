@@ -14,7 +14,7 @@
 #' @param Outcome The case (e.g. steatosis). Typically a column name in the dataset
 #' @param Out An header add (of the case) for the boxplot's header
 #' @param oute The label title. Here, almost the same as case.
-#' @return The boxplot
+#' @return The boxplots
 #' @examples
 #' ie=tv_half_log22;Outcome='Steatosis Grade';Out='Steatosis'; oute='Steatosis Grade';Group='All';
 #' boxplots(ie,Group,Outcome,Out,oute)
