@@ -7,7 +7,7 @@
 
 #' Boxplottings
 #'
-#' Converts data to boxplots.
+#' Converts data to boxplots. Yes.
 #' Written by Pauli Tikka. University of Turku. Updated 1.11.24.
 #' @param tvt The dataset with steroids and cases
 #' @param Group All, Female, Male (typically a gender column)
