@@ -3,7 +3,7 @@
 #https://ourcodingclub.github.io/tutorials/writing-r-package/
 # https://docs.posit.co/ide/user/ide/guide/pkg-devel/writing-packages.html
 
-# install.packages(c("devtools", "roxygen2", "testthat", "knitr"))
+# install.packages(c("devtools", "roxygen2", "testthat", "knitr"))a
 
 #' Boxplottings
 #'
