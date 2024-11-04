@@ -19,7 +19,7 @@
 #' ie=tv_half_log22;Outcome='Steatosis Grade';Out='Steatosis'; oute='Steatosis Grade';Group='All';
 #' boxplots(ie,Group,Outcome,Out,oute)
 #' @export
-# Some further definitions are needed
+# Some further definitions are needed, yes
 
 # This works with the autoscaled (raw if loge=1 and remove 1 in the means) data NAFLD as well...
 forestplots=function(NAFLD,Outcome,Group,name,ordera,oute,first,e,xlim) { # Group='Female'
